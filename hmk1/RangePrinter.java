@@ -11,9 +11,11 @@ public class RangePrinter {
         int start = Math.min(num1, num2);
         int end = Math.max(num1, num2);
         
-        System.out.println("Numbers between " + start + " and " + end + ":");
+        System.out.println("Odd numbers between " + start + " and " + end + ":");
         for (int i = start + 1; i < end; i++) {
-            System.out.print(i + " ");
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
         }
         System.out.println();
     }
